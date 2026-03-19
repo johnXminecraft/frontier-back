@@ -24,7 +24,7 @@ namespace FrontierWeb.Api.Controllers
             return post is null ? NotFound() : Ok(post);
         }
 
-        [Authorize(Policy = "AdminOnly")]
+        //[Authorize(Policy = "AdminOnly")]
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] PostCreateRequest req, CancellationToken ct)
         {
@@ -33,7 +33,7 @@ namespace FrontierWeb.Api.Controllers
             return CreatedAtAction(nameof(Get), new { idOrSlug = post!.Id }, post);
         }
 
-        [Authorize(Policy = "AdminOnly")]
+        //[Authorize(Policy = "AdminOnly")]
         [HttpPut("{id:int}")]
         public async Task<IActionResult> Update(int id, [FromBody] PostUpdateRequest req, CancellationToken ct)
         {
@@ -43,7 +43,7 @@ namespace FrontierWeb.Api.Controllers
             return Ok(post);
         }
 
-        [Authorize(Policy = "AdminOnly")]
+        //[Authorize(Policy = "AdminOnly")]
         [HttpDelete("{id:int}")]
         public async Task<IActionResult> Delete(int id, CancellationToken ct)
             => await _posts.DeleteAsync(id, ct) ? NoContent() : NotFound();

@@ -34,6 +34,20 @@ builder.Services.AddAuthorization(opt =>
 });
 
 builder.Services.AddControllers();
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowFrontend",
+        policy =>
+        {
+            policy.WithOrigins(
+                    "http://localhost:5173"
+                )
+                .AllowAnyHeader()
+                .AllowAnyMethod();
+        });
+});
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
@@ -66,6 +80,10 @@ builder.Services.AddBlogInfrastructure(builder.Configuration);
 
 var app = builder.Build();
 await DataSeeder.SeedAsync(app.Services);
+
+app.UseCors("AllowFrontend");
+
+app.UseStaticFiles();
 
 app.UseSwagger();
 app.UseSwaggerUI();
