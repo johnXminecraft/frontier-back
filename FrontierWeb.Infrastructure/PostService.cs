@@ -49,6 +49,9 @@ namespace FrontierWeb.Infrastructure
                 Title = req.Title.Trim(),
                 Slug = req.Slug.Trim(),
                 Content = req.Content,
+                Notes = req.Notes,
+                Author = req.Author,
+                Image = req.Image,
                 Published = req.Published,
                 CreatedAtUtc = DateTime.UtcNow,
                 UpdatedAtUtc = DateTime.UtcNow
@@ -61,19 +64,59 @@ namespace FrontierWeb.Infrastructure
 
         public async Task<(bool ok, string? error, Post? post)> UpdateAsync(int id, PostUpdateRequest req, CancellationToken ct = default)
         {
-            var post = await _db.Posts.FirstOrDefaultAsync(p => p.Id == id, ct);
-            if (post is null) return (false, null, null);
+            var post = await _db.Posts
+                .FirstOrDefaultAsync(p => p.Id == id, ct);
 
-            if (await _db.Posts.AnyAsync(p => p.Id != id && p.Slug == req.Slug, ct))
-                return (false, "Slug must be unique.", null);
+            if (post is null)
+                return (false, null, null);
 
-            post.Title = req.Title.Trim();
-            post.Slug = req.Slug.Trim();
-            post.Content = req.Content;
-            post.Published = req.Published;
+            if (!string.IsNullOrWhiteSpace(req.Slug))
+            {
+                var slug = req.Slug.Trim();
+
+                var slugExists = await _db.Posts
+                    .AnyAsync(p => p.Id != id && p.Slug == slug, ct);
+
+                if (slugExists)
+                    return (false, "Slug must be unique.", null);
+
+                post.Slug = slug;
+            }
+
+            if (!string.IsNullOrWhiteSpace(req.Title))
+                post.Title = req.Title.Trim();
+            else 
+                post.Title = post.Title;
+
+            if (req.Content is not null)
+                post.Content = req.Content;
+            else 
+                post.Content = post.Content;
+
+            if (req.Notes is not null)
+                post.Notes = req.Notes;
+            else 
+                post.Notes = post.Notes;
+
+            if (req.Author is not null)
+                post.Author = req.Author;
+            else 
+                post.Author = post.Author;
+
+            if (req.Image is not null)
+                post.Image = req.Image;
+            else 
+                post.Image = post.Image;
+
+            if (req.Published.HasValue)
+                post.Published = req.Published.Value;
+            else 
+                post.Published = post.Published;
+
             post.UpdatedAtUtc = DateTime.UtcNow;
 
             await _db.SaveChangesAsync(ct);
+
             return (true, null, post);
         }
 

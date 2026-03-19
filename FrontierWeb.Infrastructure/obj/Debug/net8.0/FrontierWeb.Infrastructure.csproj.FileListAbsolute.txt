@@ -1,0 +1,17 @@
+D:\Projects\JS\React TS\Frontier\frontier-back\FrontierWeb.Infrastructure\bin\Debug\net8.0\FrontierWeb.Infrastructure.deps.json
+D:\Projects\JS\React TS\Frontier\frontier-back\FrontierWeb.Infrastructure\bin\Debug\net8.0\FrontierWeb.Infrastructure.dll
+D:\Projects\JS\React TS\Frontier\frontier-back\FrontierWeb.Infrastructure\bin\Debug\net8.0\FrontierWeb.Infrastructure.pdb
+D:\Projects\JS\React TS\Frontier\frontier-back\FrontierWeb.Infrastructure\bin\Debug\net8.0\FrontierWeb.Application.dll
+D:\Projects\JS\React TS\Frontier\frontier-back\FrontierWeb.Infrastructure\bin\Debug\net8.0\FrontierWeb.Domain.dll
+D:\Projects\JS\React TS\Frontier\frontier-back\FrontierWeb.Infrastructure\bin\Debug\net8.0\FrontierWeb.Application.pdb
+D:\Projects\JS\React TS\Frontier\frontier-back\FrontierWeb.Infrastructure\bin\Debug\net8.0\FrontierWeb.Domain.pdb
+D:\Projects\JS\React TS\Frontier\frontier-back\FrontierWeb.Infrastructure\obj\Debug\net8.0\FrontierWeb.Infrastructure.csproj.AssemblyReference.cache
+D:\Projects\JS\React TS\Frontier\frontier-back\FrontierWeb.Infrastructure\obj\Debug\net8.0\FrontierWeb.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\JS\React TS\Frontier\frontier-back\FrontierWeb.Infrastructure\obj\Debug\net8.0\FrontierWeb.Infrastructure.AssemblyInfoInputs.cache
+D:\Projects\JS\React TS\Frontier\frontier-back\FrontierWeb.Infrastructure\obj\Debug\net8.0\FrontierWeb.Infrastructure.AssemblyInfo.cs
+D:\Projects\JS\React TS\Frontier\frontier-back\FrontierWeb.Infrastructure\obj\Debug\net8.0\FrontierWeb.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Projects\JS\React TS\Frontier\frontier-back\FrontierWeb.Infrastructure\obj\Debug\net8.0\Frontier.B812E02F.Up2Date
+D:\Projects\JS\React TS\Frontier\frontier-back\FrontierWeb.Infrastructure\obj\Debug\net8.0\FrontierWeb.Infrastructure.dll
+D:\Projects\JS\React TS\Frontier\frontier-back\FrontierWeb.Infrastructure\obj\Debug\net8.0\refint\FrontierWeb.Infrastructure.dll
+D:\Projects\JS\React TS\Frontier\frontier-back\FrontierWeb.Infrastructure\obj\Debug\net8.0\FrontierWeb.Infrastructure.pdb
+D:\Projects\JS\React TS\Frontier\frontier-back\FrontierWeb.Infrastructure\obj\Debug\net8.0\ref\FrontierWeb.Infrastructure.dll

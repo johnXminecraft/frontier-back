@@ -1,0 +1,11 @@
+D:\Projects\JS\React TS\Frontier\frontier-back\FrontierWeb.Domain\bin\Debug\net8.0\FrontierWeb.Domain.deps.json
+D:\Projects\JS\React TS\Frontier\frontier-back\FrontierWeb.Domain\bin\Debug\net8.0\FrontierWeb.Domain.dll
+D:\Projects\JS\React TS\Frontier\frontier-back\FrontierWeb.Domain\bin\Debug\net8.0\FrontierWeb.Domain.pdb
+D:\Projects\JS\React TS\Frontier\frontier-back\FrontierWeb.Domain\obj\Debug\net8.0\FrontierWeb.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\JS\React TS\Frontier\frontier-back\FrontierWeb.Domain\obj\Debug\net8.0\FrontierWeb.Domain.AssemblyInfoInputs.cache
+D:\Projects\JS\React TS\Frontier\frontier-back\FrontierWeb.Domain\obj\Debug\net8.0\FrontierWeb.Domain.AssemblyInfo.cs
+D:\Projects\JS\React TS\Frontier\frontier-back\FrontierWeb.Domain\obj\Debug\net8.0\FrontierWeb.Domain.csproj.CoreCompileInputs.cache
+D:\Projects\JS\React TS\Frontier\frontier-back\FrontierWeb.Domain\obj\Debug\net8.0\FrontierWeb.Domain.dll
+D:\Projects\JS\React TS\Frontier\frontier-back\FrontierWeb.Domain\obj\Debug\net8.0\refint\FrontierWeb.Domain.dll
+D:\Projects\JS\React TS\Frontier\frontier-back\FrontierWeb.Domain\obj\Debug\net8.0\FrontierWeb.Domain.pdb
+D:\Projects\JS\React TS\Frontier\frontier-back\FrontierWeb.Domain\obj\Debug\net8.0\ref\FrontierWeb.Domain.dll
