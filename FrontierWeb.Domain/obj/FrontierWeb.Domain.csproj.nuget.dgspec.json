@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\JS\\React TS\\Frontier\\frontier-back\\FrontierWeb.Domain\\FrontierWeb.Domain.csproj": {}
+    "D:\\Projects\\JS\\React TS\\frontier\\frontier-back\\FrontierWeb.Domain\\FrontierWeb.Domain.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\JS\\React TS\\Frontier\\frontier-back\\FrontierWeb.Domain\\FrontierWeb.Domain.csproj": {
+    "D:\\Projects\\JS\\React TS\\frontier\\frontier-back\\FrontierWeb.Domain\\FrontierWeb.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\JS\\React TS\\Frontier\\frontier-back\\FrontierWeb.Domain\\FrontierWeb.Domain.csproj",
+        "projectUniqueName": "D:\\Projects\\JS\\React TS\\frontier\\frontier-back\\FrontierWeb.Domain\\FrontierWeb.Domain.csproj",
         "projectName": "FrontierWeb.Domain",
-        "projectPath": "D:\\Projects\\JS\\React TS\\Frontier\\frontier-back\\FrontierWeb.Domain\\FrontierWeb.Domain.csproj",
+        "projectPath": "D:\\Projects\\JS\\React TS\\frontier\\frontier-back\\FrontierWeb.Domain\\FrontierWeb.Domain.csproj",
         "packagesPath": "C:\\Users\\ragho\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\JS\\React TS\\Frontier\\frontier-back\\FrontierWeb.Domain\\obj\\",
+        "outputPath": "D:\\Projects\\JS\\React TS\\frontier\\frontier-back\\FrontierWeb.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ragho\\AppData\\Roaming\\NuGet\\NuGet.Config"

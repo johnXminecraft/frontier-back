@@ -15,3 +15,4 @@ D:\Projects\JS\React TS\Frontier\frontier-back\FrontierWeb.Infrastructure\obj\De
 D:\Projects\JS\React TS\Frontier\frontier-back\FrontierWeb.Infrastructure\obj\Debug\net8.0\refint\FrontierWeb.Infrastructure.dll
 D:\Projects\JS\React TS\Frontier\frontier-back\FrontierWeb.Infrastructure\obj\Debug\net8.0\FrontierWeb.Infrastructure.pdb
 D:\Projects\JS\React TS\Frontier\frontier-back\FrontierWeb.Infrastructure\obj\Debug\net8.0\ref\FrontierWeb.Infrastructure.dll
+D:\Projects\JS\React TS\frontier\frontier-back\FrontierWeb.Infrastructure\obj\Debug\net8.0\FrontierWeb.Infrastructure.sourcelink.json

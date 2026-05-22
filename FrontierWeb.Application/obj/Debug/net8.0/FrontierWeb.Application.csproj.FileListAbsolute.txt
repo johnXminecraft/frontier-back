@@ -13,3 +13,4 @@ D:\Projects\JS\React TS\Frontier\frontier-back\FrontierWeb.Application\obj\Debug
 D:\Projects\JS\React TS\Frontier\frontier-back\FrontierWeb.Application\obj\Debug\net8.0\refint\FrontierWeb.Application.dll
 D:\Projects\JS\React TS\Frontier\frontier-back\FrontierWeb.Application\obj\Debug\net8.0\FrontierWeb.Application.pdb
 D:\Projects\JS\React TS\Frontier\frontier-back\FrontierWeb.Application\obj\Debug\net8.0\ref\FrontierWeb.Application.dll
+D:\Projects\JS\React TS\frontier\frontier-back\FrontierWeb.Application\obj\Debug\net8.0\FrontierWeb.Application.sourcelink.json

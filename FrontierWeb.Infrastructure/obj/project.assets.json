@@ -1506,11 +1506,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\JS\\React TS\\Frontier\\frontier-back\\FrontierWeb.Infrastructure\\FrontierWeb.Infrastructure.csproj",
+      "projectUniqueName": "D:\\Projects\\JS\\React TS\\frontier\\frontier-back\\FrontierWeb.Infrastructure\\FrontierWeb.Infrastructure.csproj",
       "projectName": "FrontierWeb.Infrastructure",
-      "projectPath": "D:\\Projects\\JS\\React TS\\Frontier\\frontier-back\\FrontierWeb.Infrastructure\\FrontierWeb.Infrastructure.csproj",
+      "projectPath": "D:\\Projects\\JS\\React TS\\frontier\\frontier-back\\FrontierWeb.Infrastructure\\FrontierWeb.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\ragho\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\JS\\React TS\\Frontier\\frontier-back\\FrontierWeb.Infrastructure\\obj\\",
+      "outputPath": "D:\\Projects\\JS\\React TS\\frontier\\frontier-back\\FrontierWeb.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ragho\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -1525,11 +1525,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Projects\\JS\\React TS\\Frontier\\frontier-back\\FrontierWeb.Application\\FrontierWeb.Application.csproj": {
-              "projectPath": "D:\\Projects\\JS\\React TS\\Frontier\\frontier-back\\FrontierWeb.Application\\FrontierWeb.Application.csproj"
+            "D:\\Projects\\JS\\React TS\\frontier\\frontier-back\\FrontierWeb.Application\\FrontierWeb.Application.csproj": {
+              "projectPath": "D:\\Projects\\JS\\React TS\\frontier\\frontier-back\\FrontierWeb.Application\\FrontierWeb.Application.csproj"
             },
-            "D:\\Projects\\JS\\React TS\\Frontier\\frontier-back\\FrontierWeb.Domain\\FrontierWeb.Domain.csproj": {
-              "projectPath": "D:\\Projects\\JS\\React TS\\Frontier\\frontier-back\\FrontierWeb.Domain\\FrontierWeb.Domain.csproj"
+            "D:\\Projects\\JS\\React TS\\frontier\\frontier-back\\FrontierWeb.Domain\\FrontierWeb.Domain.csproj": {
+              "projectPath": "D:\\Projects\\JS\\React TS\\frontier\\frontier-back\\FrontierWeb.Domain\\FrontierWeb.Domain.csproj"
             }
           }
         }
