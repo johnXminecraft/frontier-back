@@ -12,7 +12,6 @@ namespace FrontierWeb.Domain.Entities
         [Required]
         public string PasswordHash { get; set; } = default!;
 
-        [Required, StringLength(50)]
-        public string Role { get; set; } = "Admin"; // TODO Roles
+        public ICollection<UserRole> UserRoles { get; set; } = new List<UserRole>();
     }
 }

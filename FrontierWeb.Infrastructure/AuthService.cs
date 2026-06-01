@@ -21,7 +21,10 @@ namespace FrontierWeb.Infrastructure
 
         public async Task<TokenResponse?> LoginAsync(LoginRequest request, CancellationToken ct = default)
         {
-            var user = await _db.Users.FirstOrDefaultAsync(u => u.Username == request.Username, ct);
+            var user = await _db.Users
+                .Include(u => u.UserRoles)
+                .ThenInclude(ur => ur.Role)
+                .FirstOrDefaultAsync(u => u.Username == request.Username, ct);
             if (user is null) return null;
             if (!PasswordHash.Verify(user.PasswordHash, request.Password)) return null;
 
@@ -30,11 +33,8 @@ namespace FrontierWeb.Infrastructure
             var audience = _cfg["Auth:Audience"] ?? "BlogApiClients";
             var creds = new SigningCredentials(new SymmetricSecurityKey(Encoding.UTF8.GetBytes(key)), SecurityAlgorithms.HmacSha256);
 
-            var claims = new[]
-            {
-                new Claim(ClaimTypes.Name, user.Username),
-                new Claim(ClaimTypes.Role, user.Role)
-            };
+            var claims = new List<Claim> { new(ClaimTypes.Name, user.Username) };
+            claims.AddRange(user.UserRoles.Select(ur => new Claim(ClaimTypes.Role, ur.Role.Name)));
 
             var expires = DateTime.UtcNow.AddHours(8);
             var token = new JwtSecurityToken(issuer, audience, claims, expires: expires, signingCredentials: creds);
