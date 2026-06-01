@@ -14,6 +14,9 @@ namespace FrontierWeb.Infrastructure
 
             services.AddScoped<IAuthService, AuthService>();
             services.AddScoped<IPostService, PostService>();
+            services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IRoleService, RoleService>();
+            services.AddScoped<IPermissionService, PermissionService>();
 
             return services;
         }
