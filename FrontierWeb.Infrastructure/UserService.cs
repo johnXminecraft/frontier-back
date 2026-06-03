@@ -38,6 +38,23 @@ namespace FrontierWeb.Infrastructure
             return user?.ToResponse();
         }
 
+        public async Task<IEnumerable<PermissionResponse>?> GetPermissionsAsync(int id, CancellationToken ct = default)
+        {
+            var user = await UsersWithRoles(tracking: false)
+                .FirstOrDefaultAsync(u => u.Id == id, ct);
+
+            if (user is null)
+                return null;
+
+            return user.UserRoles
+                .SelectMany(ur => ur.Role.RolePermissions)
+                .Select(rp => rp.Permission)
+                .DistinctBy(p => p.Id)
+                .OrderBy(p => p.Name)
+                .Select(p => p.ToResponse())
+                .ToList();
+        }
+
         public async Task<(bool ok, string? error, UserResponse? user)> CreateAsync(UserCreateRequest req, CancellationToken ct = default)
         {
             var username = req.Username.Trim();
