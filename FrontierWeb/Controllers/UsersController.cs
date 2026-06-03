@@ -23,6 +23,13 @@ namespace FrontierWeb.Api.Controllers
             return user is null ? NotFound() : Ok(user);
         }
 
+        [HttpGet("{id:int}/permissions")]
+        public async Task<IActionResult> GetPermissions(int id, CancellationToken ct)
+        {
+            var permissions = await _users.GetPermissionsAsync(id, ct);
+            return permissions is null ? NotFound() : Ok(permissions);
+        }
+
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] UserCreateRequest req, CancellationToken ct)
         {
